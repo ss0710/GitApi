@@ -2,8 +2,7 @@ import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-class Nav extends React.Component{
-    render(){
+const Nav = () => {
         return(
             <React.Fragment>
                 <div className="nav_bar">
@@ -24,7 +23,6 @@ class Nav extends React.Component{
                 </div>
             </React.Fragment>
         );
-    }
 }
 
 export default Nav;

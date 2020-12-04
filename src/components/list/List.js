@@ -1,13 +1,12 @@
 import React from 'react';
 
-class List extends React.Component{
-    render(){
+const List = (props)=>{
         return(
             <React.Fragment>
                 <div className="list-div">
-                <h2>Total Repositories: {this.props.data.length}</h2>
+                <h2>Total Repositories: {props.data.length}</h2>
                 {
-                this.props.data.map((data,i)=>{
+                props.data.map((data,i)=>{
                         return <div  key={i}>
                            <div className="list-inner-div">
                            <h2>{data.name}</h2>
@@ -23,7 +22,6 @@ class List extends React.Component{
                 </div>
             </React.Fragment>
         );
-    }
 }
 
 export default List;

@@ -2,8 +2,7 @@ import React from 'react';
 import GithubWhiteLogo from '../../assets/images/github-white-logo.png';
 import {Link} from 'react-router-dom';
 
-class About extends React.Component{
-    render(){
+const About = () => {
         return(
             <React.Fragment>
                 <div className="About-outer-div">
@@ -18,7 +17,6 @@ class About extends React.Component{
                 </div>
             </React.Fragment>
         );
-    }
 }
 
 export default About;
