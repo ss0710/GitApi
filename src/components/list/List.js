@@ -6,7 +6,6 @@ const List = (props)=>{
     if(props.data.length!==0)
     {
         let url = props.data[0].owner.avatar_url;
-        console.log(url);
         comp = <img src={url} alt="avatar"/>
     }
 

@@ -20,14 +20,12 @@ class Home extends React.Component{
         this.setState({
             name : event.target.value
         })
-        console.log(this.state.name);
     }
 
     searchUser = () => {
         if(this.state.name)
         {
             getGithubData(this.state.name, (response) => {
-                console.log(response);
                 if(response.data.length===0)
                 {
                     swal("no repos found","this user has no repositories","error");
